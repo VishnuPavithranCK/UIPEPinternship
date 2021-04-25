@@ -1,0 +1,138 @@
+body {
+  margin: 0px;
+  padding: 0px 150px;
+}
+
+* {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/*-----------------------------Header -----------------------------------*/
+#header {
+  height: 60vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/flutter.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/flutter.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.user-box {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  width: 80%;
+  -webkit-transform: translate(-50%, -25%);
+          transform: translate(-50%, -25%);
+}
+
+.user-box img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  border: 2px solid #0e0d0d;
+}
+
+.user-box img:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.user-box h1 {
+  color: black;
+  margin: 10px;
+}
+
+.user-box p {
+  color: black;
+}
+
+.user-box a {
+  text-decoration: none;
+}
+
+.tech {
+  margin-left: 12px;
+  margin-right: 11px;
+  height: 137vh;
+}
+
+.tech .col-2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.tech .row .col-4 {
+  padding-left: 50px;
+  background-color: #4a9fe6;
+}
+
+.tech .row .col-4 h6 {
+  margin-top: 50px;
+}
+
+.tech .row .col-4 .Interest {
+  margin-top: 40px;
+}
+
+.contactfooter .sociallinks a img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.contactfooter .sociallinks a img:hover {
+  cursor: pointer;
+  background: #2d2f3a;
+}
+
+.contactfooter {
+  background: #323232;
+  color: #b5b8b8;
+}
+
+.sociallinks a img {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.col-8 {
+  background: #323232;
+  color: #b5b8b8;
+}
+
+.col-8 h5 {
+  color: #4a9fe6;
+}
+
+.col-8 .head {
+  margin-top: 10px;
+  width: 40%;
+  background: #b8b8b8;
+  color: black;
+}
+
+.col-8 .course .head {
+  margin-top: 10px;
+  width: 50%;
+  background: #b8b8b8;
+  color: black;
+}
+
+.col-8 .Education .head {
+  margin-top: 10px;
+  width: 40%;
+  background: #b8b8b8;
+  color: black;
+}
+
+.tech .row .col-4 .progress .progress-bar {
+  background-color: #323232;
+}
+
+.tech .row .col-4 .progress {
+  background-color: rgba(53, 53, 53, 0.4);
+}
+/*# sourceMappingURL=styles.css.map */
