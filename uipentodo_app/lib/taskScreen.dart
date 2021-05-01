@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'addtaskscreen.dart';
 import 'task_list.dart';
-import 'model.dart';
+// import 'model.dart';
 
 class TaskScreen extends StatefulWidget {
   @override
@@ -9,11 +9,8 @@ class TaskScreen extends StatefulWidget {
 }
 
 class _TaskScreenState extends State<TaskScreen> {
-  List<Task> task = [
-    // Task(name: "buy milk ", number:"1" ),
-    // Task(name: "buy milk ", number: "1"),
-    // Task(name: "buy milk ", number:"1" )
-  ];
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +21,7 @@ class _TaskScreenState extends State<TaskScreen> {
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            TaskList(task),
+            TaskList(),
           ],
         ),
       ),
@@ -34,11 +31,7 @@ class _TaskScreenState extends State<TaskScreen> {
         onPressed: (){
           showModalBottomSheet(
               context: context,
-              builder: (context)=>SingleChildScrollView(child: AddTaskScreen((newTitle,newNum){
-                  setState(() {
-                    task.add(Task(name: newTitle,number:newNum ));
-                  });
-              })),
+              builder: (context)=>SingleChildScrollView(child: AddTaskScreen()),
               );
         },
         child: Icon(Icons.add),
