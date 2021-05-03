@@ -1,8 +1,14 @@
+
 import 'package:flutter/material.dart';
+import 'package:uipentodo_app/login_screen.dart';
+import 'package:uipentodo_app/registration_screen.dart';
 import 'taskScreen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'task_bloc.dart';
+
 import 'model.dart';
+
+
 void main(){
   runApp(MyApp());
 }
@@ -22,7 +28,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.pink[600],
       ),
-      home: TaskScreen(),
+     debugShowCheckedModeBanner: false,
+     initialRoute: LoginScreen.routeName,
+     routes: {
+        LoginScreen.routeName :(context)=>LoginScreen(),
+        RegistrationScreen.routeName : (context)=> RegistrationScreen(),
+       TaskScreen.routeName : (context)=> TaskScreen(),
+
+     },
     ),
     );
   }
